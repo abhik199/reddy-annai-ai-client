@@ -56,7 +56,7 @@ const Home = () => {
             {sliders.map((slide) => (
               <SwiperSlide key={slide.id}>
                 <img
-                  src={`http://localhost:5001/slider/${slide.imageUrl}`}
+                  src={`${process.env.REACT_APP_BASE_URL}/slider/${slide.imageUrl}`}
                   alt="Slide"
                   className="home-slider-img"
                 />

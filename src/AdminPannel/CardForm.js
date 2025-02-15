@@ -113,7 +113,7 @@ const CardForm = ({ selectedCard, clearSelection }) => {
             {" "}
             {/* Use _id for the key */}
             <img
-              src={`http://localhost:5001/card/${card.imageUrl}`}
+              src={`${process.env.REACT_APP_BASE_URL}/card/${card.imageUrl}`}
               alt={card.title}
               className="card-img"
             />

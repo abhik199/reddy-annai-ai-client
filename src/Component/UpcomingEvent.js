@@ -15,7 +15,7 @@ const UpcomingEvent = () => {
             <div key={card.id} className="custom-card">
               <div className="card-image">
                 <img
-                  src={`http://localhost:5001/card/${card.imageUrl}`}
+                  src={`${process.env.REACT_APP_BASE_URL}/card/${card.imageUrl}`}
                   alt={card.title}
                   className="card-img"
                 />

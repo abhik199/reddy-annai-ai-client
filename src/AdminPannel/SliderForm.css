@@ -1,32 +1,25 @@
 .slider-container {
-  width: 60%;
-  /* Slightly wider for better image display */
+  width: 80%;
+  /* Increased width */
   margin: 20px auto;
-  /* Added margin for spacing */
   text-align: center;
   border: 1px solid #ddd;
-  /* Subtle border */
   padding: 20px;
   border-radius: 8px;
-  /* Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
   background-color: #f9f9f9;
-  /* Light background */
 }
 
 .slider-title {
   font-size: 28px;
-  /* Larger title */
   margin-bottom: 25px;
   color: #333;
-  /* Darker title color */
 }
 
 .upload-area {
-  /* New: Styles for upload area */
   display: flex;
   flex-direction: column;
+  /* Stack elements vertically */
   align-items: center;
   margin-bottom: 20px;
   border: 2px dashed #ccc;
@@ -37,40 +30,39 @@
 
 .slider-input {
   display: none;
-  /* Hide the input */
 }
 
 .upload-label {
-  /* Style the label as a button */
   background-color: #4CAF50;
-  /* Green */
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+  /* Space below the label */
+  display: inline-block;
+  /* Make it behave like a block element for width */
 }
 
-.upload-label i {
-  /* Icon spacing */
-  margin-right: 5px;
+.preview-image {
+  max-width: 200px;
+  /* Limit preview width */
+  max-height: 200px;
+  /* Limit preview height */
+  margin-top: 10px;
+  /* Space above preview */
+  border-radius: 8px;
 }
-
 
 .slider-button {
   margin: 0 10px;
-  /* Space between buttons */
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
-  /* Slightly bolder text */
   transition: background-color 0.3s ease;
-  /* Smooth transition */
 }
 
 .add-button {
@@ -80,7 +72,6 @@
 
 .add-button:hover {
   background-color: #45a049;
-  /* Darker green on hover */
 }
 
 .delete-button {
@@ -90,61 +81,45 @@
 
 .delete-button:hover {
   background-color: #d32f2f;
-  /* Darker red on hover */
 }
 
 .slider-list {
   list-style: none;
   padding: 0;
   display: flex;
-  /* Use flexbox for horizontal layout */
   overflow-x: auto;
-  /* Enable horizontal scrolling if needed */
   white-space: nowrap;
-  /* Prevent images from wrapping */
+  margin-top: 20px;
+  /* Space above image list */
 }
 
 .slider-item {
   margin: 10px;
   border: 1px solid #ddd;
-  /* Border for each item */
   border-radius: 8px;
   overflow: hidden;
-  /* Hide content that overflows the rounded corners */
   position: relative;
-  /* For positioning the delete button */
 }
 
 .slider-image {
   width: 150px;
-  /* Increased image size */
   height: 150px;
   object-fit: cover;
-  /* Maintain aspect ratio and cover container */
   display: block;
-  /* Prevent image from creating extra space */
   border-radius: 8px 8px 0 0;
-  /* Rounded top corners */
-}
-
-.delete-button-container {
-  /* Container for delete button */
-  position: absolute;
-  top: 5px;
-  right: 5px;
 }
 
 .delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
   background-color: rgba(244, 67, 54, 0.8);
-  /* Semi-transparent red */
   color: white;
   padding: 5px 8px;
-  /* Smaller padding */
   border-radius: 4px;
   font-size: 12px;
 }
 
 .delete-button:hover {
   background-color: rgba(244, 67, 54, 1);
-  /* Fully opaque on hover */
 }
